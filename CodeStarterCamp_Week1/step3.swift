@@ -32,14 +32,12 @@ func printPeperoProperties(bodyLength: Int, body: String, topping: String, stick
 // 객체지향...을 생각하니 스위프트는 어떤 성격의 언어인지 학습하지 않았다.
 // 문서에는 struct, class 필요한게 뭔지 아직 모르겠다.
 
-// 길이에 따른 막대를 그리는 함수
 func printPeperoStick(stickLength: Int) {
     for _ in 1...stickLength {
         print(" | |") // 토핑 두께가 1인 경우로 한정
     }
 }
 
-// 몸통과 토핑을 매개변수로 받아 토핑과 몸통을 만드는 함수
 func makePeperoRow(body: String, topping: String) -> String {
     var row: String = ""
     row.append(topping == "" ? " " : topping)
